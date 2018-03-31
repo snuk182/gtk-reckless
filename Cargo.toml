@@ -1,0 +1,25 @@
+[package]
+name = "gtk-reckless"
+version = "0.1.0"
+authors = ["Serhii Plyhun <snuk188@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "gtk_reckless"
+path = "src/lib.rs"
+
+[dependencies]
+gtk = { version = "^0.4", features = ["v3_10"] }
+gdk = { version = "^0.8", features = ["v3_10"] }
+glib = { version = "^0.5" }
+glib-sys = { version = "^0.6" }
+gobject-sys = { version = "^0.6" }
+gtk-sys = { version = "^0.6" }
+lazy_static = { version = "^1.0" }
+libc = { version = "^0.2" }
+pango = { version = "^0.4" }
+
+[build-dependencies]
+cc = { version = "^1.0" }
+pkg-config = { version = "^0.3" }
+
